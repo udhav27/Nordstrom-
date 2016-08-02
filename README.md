@@ -16,3 +16,21 @@ n=int(raw_input())
 d=dict()
 for i in range(1,n+1):
     d[i]=i*i
+values=raw_input()
+l=values.split(",")
+t=tuple(l)
+print l
+print t
+class InputOutString(object):
+    def __init__(self):
+        self.s = ""
+
+    def getString(self):
+        self.s = raw_input()
+
+    def printString(self):
+        print self.s.upper()
+
+strObj = InputOutString()
+strObj.getString()
+strObj.printString()
